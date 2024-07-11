@@ -1,0 +1,49 @@
+@import "./scss/bootstrap";
+@import "./scss/sideBar";
+@import "./scss/auth.scss";
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+
+#root {
+    font-family: "Quicksand", sans-serif;
+}
+.taskCard {
+    height: 250px;
+    width: 250px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+    border-radius: 18px;
+}
+#addTaskCard {
+    cursor: pointer;
+    transition: all 0.4s ease-in;
+}
+#addTaskCard:hover {
+    box-shadow: rgba(0, 0, 0, 1) 0px 5px 15px;
+}
+// Global Scrollbar
+::-webkit-scrollbar {
+    width: 7px;
+}
+::-webkit-scrollbar-track {
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: rgb(44, 62, 80, 0.3);
+}
+// TaskCard Scrollbar
+
+.taskCard::-webkit-scrollbar {
+    width: 7px;
+}
+.taskCard::-webkit-scrollbar-track {
+    border-radius: 8px;
+    background-color: transparent;
+}
+
+.taskCard::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: rgb(44, 62, 80, 0.3);
+}
